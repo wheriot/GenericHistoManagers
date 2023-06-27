@@ -41,7 +41,7 @@
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 #include "Histo.hh"
-#include "HistoMessenger.hh"
+#//include "HistoMessenger.hh"
 #include "G4RootAnalysisManager.hh"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -58,14 +58,14 @@ Histo::Histo()
   fHistoActive(false),
   fNtupleActive(false)
 {
-  fMessenger = new HistoMessenger(this);
+  //fMessenger = new HistoMessenger(this);
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 Histo::~Histo()
 {
-  delete fMessenger;
+  //delete fMessenger;
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

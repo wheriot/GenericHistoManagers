@@ -96,6 +96,7 @@ HistoManager::HistoManager()
 {
   fHisto = new Histo();
   fHisto->SetVerbose(fVerbose);
+  fHisto->SetFileName("root");
   BookHisto();
   fNeutron = G4Neutron::Neutron();
 }
